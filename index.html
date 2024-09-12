@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offline bootstrap</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+      <div class="row mt-4"><!--Header section start or 1st row start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Kindle</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </div><!--Header section end or 1st row end-->
+
+      <div class="row mt-4 p-3"><!--main section start or 2nd row start-->
+         <div class="col-md-3"><!--side bar start-->
+          <h5>filters by category</h5><hr>
+          <a href="#">All</a><br>
+          <a href="#">Children book</a><br>
+          <a href="#">fantasy</a><br>
+          <a href="#">mystery</a><br>
+
+          <h5>Fliter by price</h5><hr>
+          <from action="#" method="get">
+            <div class="mb-1">
+              <label for="input1" class="form-label">Min</label>
+              <input type="number" class="form-control" id="input1">
+            </div>
+            <div class="mb-1">
+              <label for="input2" class="form-label">Max</label>
+              <input type="number" class="form-control" id="input2">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Fliter</button>
+          </from>
+          <br>
+          <h5>sort by price</h5><hr>
+          <a href="#">High to low</a><br>
+          <a href="#">low to high</a><br>
+         </div><!--side bar end-->
+         
+         <div class="col-md-9"><!---product list section start-->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card" style="width: 100%;">
+                <img src="static/images/be_well_bee.jpg" class="card-img-top" alt="..."height="150px">
+                <div class="card-body">
+                  <h5 class="card-title">BE well bee</h5>
+                  <p class="card-text"><br>price <br>299</p>
+                  <a href="product_detail.html" class="btn btn-primary">See Details</a>
+                </div>
+              </div>
+            </div><!--product 1 end-->
+            <div class="col-md-3">
+              <div class="card" style="width: 100%;">
+                <img src="static/images/be_well_bee.jpg" class="card-img-top" alt="..."height="150px">
+                <div class="card-body">
+                  <h5 class="card-title">holy ghost</h5>
+                  <p class="card-text"><br>price <br>250</p>
+                  <a href="product_detail.html" class="btn btn-primary">See Details</a>
+                </div>
+              </div>
+            </div><!--product 2 end-->
+            <div class="col-md-3">
+              <div class="card" style="width: 100%;">
+                <img src="static/images/be_well_bee.jpg" class="card-img-top" alt="..."height="150px">
+                <div class="card-body">
+                  <h5 class="card-title">harry potter</h5>
+                  <p class="card-text"><br>price <br>260</p>
+                  <a href="product_detail.html" class="btn btn-primary">See Details</a>
+                </div>
+              </div>
+            </div><!--product 3 end-->
+            <div class="col-md-3">
+              <div class="card" style="width: 100%;">
+                <img src="static/images/be_well_bee.jpg" class="card-img-top" alt="..."height="150px">
+                <div class="card-body">
+                  <h5 class="card-title">alice in wonder land</h5>
+                  <p class="card-text"><br>price <br>270</p>
+                  <a href="product_detail.html" class="btn btn-primary">See Details</a>
+                </div>
+              </div>
+            </div><!--product 4 end-->
+          </div> 
+         </div><!---product list section end-->
+      </div><!--main section end or 2nd row end-->
+
+      <div class="row mt-4 p-3 bg-secondary text-white"><!--footer section start or 3rd row start-->
+          <div class="col-md-4 p-4">
+            <h5>Address</h5><hr>  
+            22-B,1st floor,<br>
+            Rainbow plazz<br>
+            chitra bagh khandwa-naka,<br>
+            indore-411017
+          </div>
+          <div class="col-md-4 p-4">
+            <h5>Quick Links</h5><hr>
+            <a href="index.html">Home</a><br>
+            <a href="">About</a><br>
+            <a href="">Contact</a>
+          </div>
+          <div class="col-md-4 p-4">
+            <h5>social media</h5><hr>
+            <a href=""><i class="bi bi-linkedin"></i></a><br>
+            <a href=""><i class="bi bi-facebook"></i></a><br>
+            <a href=""><i class="bi bi-instagram"></i></a><br>
+            <a href=""><i class="bi bi-twitter"></i></a><br>                                       
+          </div>
+      </div><!--footer section end or 3rd row end-->
+      
+
+    </div>
+
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/pooper.js"></script>
+</body>
+</html>
