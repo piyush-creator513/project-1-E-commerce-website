@@ -1,4 +1,4 @@
-eCommerce Website
+E-Commerce Website
 A fully functional and responsive eCommerce website built using modern web development technologies. This project includes features such as product listing, shopping cart, user authentication, and order management — providing a seamless shopping experience.
 
 🔧 Tech Stack:
